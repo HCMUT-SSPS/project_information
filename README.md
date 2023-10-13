@@ -1,5 +1,30 @@
 # HCMUT_SSPS - STUDENT SMART PRINTING SERVICE at HCMUT
 
+## Table of Contents
+
+- [HCMUT\_SSPS - STUDENT SMART PRINTING SERVICE at HCMUT](#hcmut_ssps---student-smart-printing-service-at-hcmut)
+  - [Table of Contents](#table-of-contents)
+  - [Requirements](#requirements)
+    - [Domain Context](#domain-context)
+    - [FRs and NFRs](#frs-and-nfrs)
+    - [Use-case Diagram](#use-case-diagram)
+      - [Use case system of HCMUT\_SSPS](#use-case-system-of-hcmut_ssps)
+      - [Printing Module off HCMUT\_SSPS](#printing-module-off-hcmut_ssps)
+  - [System Modeling](#system-modeling)
+    - [Activity Diagrams](#activity-diagrams)
+      - [Description](#description)
+    - [Sequence Diagrams](#sequence-diagrams)
+    - [Class Diagram](#class-diagram)
+    - [Figma](#figma)
+  - [Architectural Design](#architectural-design)
+    - [Architectual Diagram](#architectual-diagram)
+      - [Arc. Diagram](#arc-diagram)
+      - [Arc. Description](#arc-description)
+    - [Component Diagram](#component-diagram)
+      - [Comp. Diagram](#comp-diagram)
+      - [Comp. Description](#comp-description)
+  - [Project Information](#project-information)
+
 ## Requirements
 
 ### Domain Context
@@ -17,19 +42,37 @@
 
 - Table of use-cases: [See here](./requirements/table_of_usecases.md)
   - Upload Document:
-- Use case system of HCMUT_SSPS: ![Use Case System](./requirements/use-case-system.png "Use case System of HCMUT_SSPS")
+#### Use case system of HCMUT_SSPS
 
-- Printing Module off HCMUT_SSPS: ![Use Case System](./requirements/printing-modules.png "Use case System of HCMUT_SSPS")
+![Use Case System](./requirements/use-case-system.png "Use case System of HCMUT_SSPS")
+
+#### Printing Module off HCMUT_SSPS
+
+![Use Case System](./requirements/printing-modules.png "Use case System of HCMUT_SSPS")
 
 ## System Modeling
 
 ### Activity Diagrams
 
+![Activity Diagram](system_modeling/activity_diagram.png "Activity Diagram")
+
+#### Description
+
+1. A student uploads the document file to be printed. 
+2. If the file type is not among the ones permitted by the SPSO, he/she is required to upload another one until the file type is valid or he/she cancels uploading. 
+3. The student then chooses a printer and specifies printing properties (paper size, pages to be printed, one-/double-sided printing, number of copies, etc.). 
+4. If the number of pages to be printed exceeds the student’s account page balance, he/she may buy some printing pages, or change the printing properties, or cancel printing.
+5. Finally the document printing is conducted.
+
 ### Sequence Diagrams
 
 ### Class Diagram
 
+- [See here]("https://lucid.app/lucidchart/76335e57-d6df-45d4-b761-eb0bd0b5617a/edit?viewport_loc=-1824%2C-410%2C8064%2C4502%2CHWEp-vi-RSFO&invitationId=inv_e41aa7bc-3569-4097-8df3-b1163e9dddaa")
+
 ### Figma
+
+- [See here - Official UI/UX](https://www.figma.com/file/3zPwrxvGnkqkTMH4TApfZk/PrintPulse?type=design&node-id=1475%3A5511&mode=design&t=vm82A1VRbjwftSgQ-1)
 
 ## Architectural Design
 
