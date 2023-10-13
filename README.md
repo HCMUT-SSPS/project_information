@@ -4,24 +4,22 @@
 
 ### Domain Context
 
-- Domain Context
-- Relevant Stakeholders and their current needs
-- Benefits of HCMUT_SPSS for each stakeholders
+- Domain Context: [Read here](./requirements/domain_context.md)
+- Relevant Stakeholders and their current needs: [Read here](./requirements/stakeholders.md)
+- Benefits of HCMUT_SPSS for each stakeholders: [Read here](./requirements/benefits.md)
 
 ### FRs and NFRs
 
-#### Functional Requirements
+- Functional Requirements: [See the table here](./requirements/frs.md)
+- Non-functional Requirements: [See the table here](./requirements/nfrs.md)
 
-- See here.
+### Use-case Diagram
 
-#### Non-functional Requirements
+- Table of use-cases: [See here](./requirements/table_of_usecases.md)
+  - Upload Document:
+- Use case system of HCMUT_SSPS: ![Use Case System](./requirements/use-case-system.png "Use case System of HCMUT_SSPS")
 
-- See here.
-
-#### Use-case Diagram
-
-- Image of use-case diagram here.
-- Description
+- Printing Module off HCMUT_SSPS: ![Use Case System](./requirements/printing-modules.png "Use case System of HCMUT_SSPS")
 
 ## System Modeling
 

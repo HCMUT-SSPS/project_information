@@ -1,0 +1,10 @@
+# Upload Document Case
+
+|Use-case name   |Upload Document                                                                                                                                                                                                                                        |
+|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Actor           |Students, Faculty and Instructors                                                                                                                                                                                                                      |
+|Description     |Allowing users to upload documents for printing                                                                                                                                                                                                        |
+|Precondition    |Users are logged into the HCMUT-SSPS                                                                                                                                                                                                                   |
+|Normal Flow     |Users press the upload document button<br><br>Users select the document file to upload<br><br>System processes the document upload, and assign document’s informations<br><br>Users receive confirmation message<br><br>Users can review their document|
+|Exceptions      |2\. If the selected file format is not permitted, the system displays an error message.<br>3\. If the file is too large, it will display the error message<br>4\. If there is a server error during the upload, the system displays an error message   |
+|Alternative Flow|1a. The users can drag the document to the upload field<br>2a. If the users decide not to proceed, they can cancel the upload and return<br>4a. If the users encounter any issue, they may contact the helpdesk                                        |

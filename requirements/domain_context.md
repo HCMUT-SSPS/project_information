@@ -1,0 +1,9 @@
+# Domain Context
+
+Every year, thousands of students enroll at HCMUT. In 2022, it is recorded that there will be about 5000 students enrolled. Accompanying this impressive number of students is increased pressure on the demand for printed materials, which universities need to meet. According to a study in America, nationally, there’s up to 34 billion papers being used in schools per year. Therefore, having a smart printing service system in universities is extremely necessary.
+
+Student Smart Printing Service (HCMUT_SSPS) core domain is to provide a convenient and efficient way to fulfill students' document “printing demands”. The full lifecycle of print activities is managed by this domain, including file uploads, print property customisation, printer selection, and activities log.
+
+There’s also a variety of tasks carried out in the supporting domain to maintain the system's usability and functionality. By using the HCMUT_SSO to secure system access, “authentication” makes sure that only authorized users may access the printing service. “Storage” is the process for administering the database to store crucial information such as user profiles, printing logs, and system settings. This domain also consists of keeping track of the “financial” side of the printing service, including processing payments for additional printing pages via the BKPay system. This domain also focuses on generating, storing, and analyzing “reports” on the usage of the printing system.
+
+Additionally, within the generic domain, when it comes to “user experience”, the service has to provide an intuitive and user-friendly experience when interacting with the HCMUT-SSPS. While not directly tied to core functioning, “sustainability” is a growing domain that reflects efforts to reduce paper waste and environmental effects through responsible printing techniques.
