@@ -46,7 +46,7 @@
 
 ![Use Case System](./requirements/use-case-system.png "Use case System of HCMUT_SSPS")
 
-#### Printing Module off HCMUT_SSPS
+#### Printing Module of HCMUT_SSPS
 
 ![Use Case System](./requirements/printing-modules.png "Use case System of HCMUT_SSPS")
 
@@ -67,6 +67,44 @@
 #### (Student) Viewing Printing Log
 
 ![Activity Diagram_Viewing Printing Log](system_modeling/Activity_diagram-Viewing_printing_log.drawio.png)
+
+1. A student clicks the “View Printing Log” section.
+2. He/she then specifies the date range that he/she wants to log.
+3. Finally the system shows the printing log for him/her to view.
+
+#### (SPSO) Viewing Printing History
+
+![Activity Diagram_Viewing Printing History](system_modeling/Activity_diagram-Viewing_printing_history.drawio.png)
+
+1. SPSO clicks the “View Printing History” section.
+2. If SPSO doesn’t want to see all history, he/she specifies the date range, student ID and printer(s) to view history.
+3. SPSO views and analyzes printing history.
+4. If SPSO wants to export history data, he/she specifies the export format and then exports.
+
+#### (SPSO) Managing Printers
+
+![Activity Diagram_Managing Printers](system_modeling/Activity_diagram-Managing_printers.drawio.png)
+
+1. SPSO clicks the “Manage Printer” section.
+2. SPSO chooses the printer to manage.
+3. SPSO adds/enables/disables the chosen printer.
+4. If SPSO decides not to update, he/she cancels updating, else he/she saves changes.
+
+#### (SPSO) Managing Configuration
+
+![Activity Diagram_Managing Printers](system_modeling/Activity_diagram-Managing_configurations.drawio.png)
+
+1. SPSO clicks the “Settings Configuration” section.
+2. SPSO reverts all configurations to default ones or specifies new configurations.
+3. If SPSO decides not to update, he/she cancels updating, else he/she saves changes.
+
+#### (SPSO) Generating Reports
+
+![Activity Diagram_Managing Printers](system_modeling/Activity_diagram-Generating_report.drawio.png)
+
+1. SPSO clicks the “Generate Report” button.
+2. SPSO specifies the report criteria (time period, type of report).
+3. SPSO clicks the “Generate” button to make the system generate the appropriate report.
 
 ### Sequence Diagrams
 
