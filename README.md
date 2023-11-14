@@ -154,7 +154,7 @@ When the user clicks the "Report" button, the UI displays the report form. The u
 
 ### Class Diagram
 
-[See here](https://lucid.app/lucidchart/76335e57-d6df-45d4-b761-eb0bd0b5617a/edit?viewport_loc=-1824%2C-410%2C8064%2C4502%2CHWEp-vi-RSFO&invitationId=inv_e41aa7bc-3569-4097-8df3-b1163e9dddaa)
+For better view: [See here](https://lucid.app/lucidchart/76335e57-d6df-45d4-b761-eb0bd0b5617a/edit?viewport_loc=-1824%2C-410%2C8064%2C4502%2CHWEp-vi-RSFO&invitationId=inv_e41aa7bc-3569-4097-8df3-b1163e9dddaa)
 
 ![Sequence Diagram_Reports](system_modeling/class_diagram.png)
 
@@ -174,7 +174,23 @@ When the user clicks the "Report" button, the UI displays the report form. The u
 
 #### Comp. Diagram
 
+![Sequence Diagram_Reports](architecture_design/component.drawio.png)
+
 #### Comp. Description
+
+The component “Student Dashboard” provides the document file for the component “Document” through the interface “Upload document”, which is then used for printing with the component “Printer”. 
+
+“Student Dashboard” also specifies printing properties through the interface “Printing properties” for the component “Printing Configuration” and next the printing properties is provided to the component “Printer”. 
+
+The component “Page Purchase” can know whether the student wants to buy more pages from the component “Printing Configuration” (if the number of pages to print exceeds the student’s balance). 
+
+The component “Printing History” can get the history of printing from the component “Printer” and can consequently provide history to “SPSO Account” (through interface “Printing history”) as well as printing log to the component “Log Printing”, allowing “Student Dashboard” to view the printing log (through interface “Printing Log”).
+
+The component “Printer” also provides information for “Generate Reports” to generate reports and let “SPSO Account” get them (through “Reports” interface).
+
+“SPSO Account” provides the list of active printers (by adding/enabling/disabling some printers) to “Printer” through the “Printer List” interface.
+
+“SPSO Account” can provide information to “System Configuration” (permitted file types, the default number of pages and the date that the system gives them to students, etc.) and let “Student Dashboard” know the configuration. Information about permitted file types is also provided to “Document” to check for valid file types.
 
 ## Project Information
 
