@@ -106,9 +106,18 @@
 2. SPSO specifies the report criteria (time period, type of report).
 3. SPSO clicks the “Generate” button to make the system generate the appropriate report.
 
-### Sequence Diagrams
+### Sequence Diagram
 
 For the whole diagram: [See here](https://app.diagrams.net/#G1ip6WyXsUAPqwOgMxc2w9fqgi0lAFVO5v)
+
+#### (User) Printing documents
+
+![Sequence Diagram_Printing Documents](system_modeling/Sequence_diagram-Printing.png)
+
+The SSPS interface facilitates the user's document upload requests, enabling document uploads to the Server. The Server manages these requests and uploads the results back to the UI for the user's review. The UI presents a selection of available printers for the user to choose from, and upon selection, the user can customize printing properties, sending the request to the Server via the UI. The Server processes the properties request, checking the page balance and responding accordingly: 
+  If the required pages exceed the page balance, the Server sends a "Not Enough Balance" response to the UI, prompting the user to either modify properties or purchase more pages, with the UI sending an "Update Properties" request to the Server. The Server handles the request, returning a "Confirmation Message" response to the UI for the user. 
+  If the required pages are less than or equal to the page balance, the Server returns an "Enough Balance" response, and the UI displays a properties preview, allowing the user to proceed with printing. 
+Subsequently, the user can send the "Print Document" request to the Server via the UI, which adds the request to the processing queue. Finally, the Server returns the "Upload Result" response to the UI, delivering a confirmation message to the user.
 
 ### Class Diagram
 
