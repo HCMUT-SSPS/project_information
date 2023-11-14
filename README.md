@@ -110,7 +110,7 @@
 
 For the whole diagram: [See here](https://app.diagrams.net/#G1ip6WyXsUAPqwOgMxc2w9fqgi0lAFVO5v)
 
-#### (User) Printing documents
+#### (User) Printing Documents
 
 ![Sequence Diagram_Printing Documents](system_modeling/Sequence_diagram-Printing.png)
 
@@ -121,6 +121,36 @@ If the required pages exceed the page balance, the Server sends a "Not Enough Ba
 If the required pages are less than or equal to the page balance, the Server returns an "Enough Balance" response, and the UI displays a properties preview, allowing the user to proceed with printing. 
 
 Subsequently, the user can send the "Print Document" request to the Server via the UI, which adds the request to the processing queue. Finally, the Server returns the "Upload Result" response to the UI, delivering a confirmation message to the user.
+
+#### (User) Viewing Printing Log
+
+![Sequence Diagram_Viewing Printing Log](system_modeling/Sequence_diagram-Viewing_printing_log.png)
+
+To view the printing log, the user specifies the filtering criteria, which the UI uses to send a "Log Retrieval Request" to the Server. The Server processes this request and returns the user's printing log to the UI for display.
+
+#### (SPSO) Viewing Printing History
+
+![Sequence Diagram_Viewing Printing History](system_modeling/Sequence_diagram-Viewing_printing_history.png)
+
+The user initiates a "View Printing History" request via the UI, selecting the history scope and specifying the filtering criteria. The UI then sends a "History Retrieval" request to the Server, which handles the request and subsequently returns the Printing History to the UI for display to the user.
+
+#### (SPSO) Managing Printers
+
+![Sequence Diagram_Managing Printers](system_modeling/Sequence_diagram-Managing_printers.png)
+
+The User accesses "Manage Printer" through the UI, which triggers a request to "Get Printer List" from the Server. Upon receiving the request, the Server returns the Printer List to the UI, which then displays the list to the user. The user selects a printer for management, leading to the UI sending a request to "Get Printer Properties" from the Server. The Server processes this request and returns the Printer's Properties to the UI, which displays the properties to the user. The user proceeds to "Edit Properties" and "Save changes," prompting the UI to upload the changes to the Server. The Server processes the changes and returns a "Confirmation Message" to the UI, which in turn displays the message to the user, thereby confirming the successful update.
+
+#### (SPSO) Setting Configurations
+
+![Sequence Diagram_Setting Configurations](system_modeling/Sequence_diagram-Setting_configurations.png)
+
+The user accesses "Settings Configuration" through the UI, prompting a request to "Get System's Configuration" from the server. The server responds by returning the System Configuration to the UI, which then displays the configuration to the user. The user proceeds to "Edit Configuration" and "Save Changes," leading the UI to upload the changes to the server. The server processes the changes and returns a "Confirmation Message" to the UI, which subsequently displays the message to the user, confirming the successful update.
+
+#### (SPSO) Reports
+
+![Sequence Diagram_Reports](system_modeling/Sequence_diagram-Report.png)
+
+When the user clicks the "Report" button, the UI displays the report form. The user specifies the report criteria and clicks "Generate," prompting the UI to upload the report criteria. The server then generates the report based on the specified criteria and sends it back to the UI, which displays the report to the user.
 
 ### Class Diagram
 
