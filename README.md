@@ -41,7 +41,7 @@
 ### Use-case Diagram
 
 - Table of use-cases: [See here](./requirements/table_of_usecases.md)
-  - Upload Document:
+  
 #### Use case system of HCMUT_SSPS
 
 ![Use Case System](./requirements/use-case-system.png "Use case System of HCMUT_SSPS")
