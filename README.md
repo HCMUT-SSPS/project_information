@@ -164,9 +164,57 @@ For better view: [See here](https://lucid.app/lucidchart/76335e57-d6df-45d4-b761
 
 ## Architectural Design
 
-### Architectual Diagram
+### Architecture Diagram
 
-![Architecture Diagram](architecture_design/layer_architecture.drawio.png)
+For the whole diagram: [See here](https://app.diagrams.net/#G1L54TNhFaX3iUQutHoy5fsj09sh5_NIhA)
+
+#### Presentation Layer
+
+![Architecture Diagram_Presentation Layer](architecture_design/Architecture_diagram-Presentation_layer.png)
+
+The Student Interface allows students to interact with the printing system.
+
+The SPSO Interface enables the Student Printing Service Officer to manage the printing infrastructure.
+
+#### Business Layer
+
+![Architecture Diagram_Business Layer](architecture_design/Architecture_diagram-Business_layer.png)
+
+The Print Service Business Logic manages actions related to printing, including paper purchase, configuration selection, and printing tasks.
+
+The SPSO Management Business Logic oversees printer management, activity log tracking, user management, and system configuration.
+
+The Logging Service Business Logic handles personal transactions, environmental impacts, and activity logging for auditing and analysis purposes.
+
+The Authentication manages user authentication and profile handling for secure access.
+
+#### Domain Layer (Microservices)
+
+![Architecture Diagram_Domain Layer](architecture_design/Architecture_diagram-Domain_layer.png)
+
+The connectors and handlers facilitate the communication between the services and the business logic, ensuring a continuous flow of data and operations.
+
+The Authentication Service facilitates secure user authentication through the BK Authentication Service.
+
+The Profile Service manages user profiles via the Profile Handler.
+
+The Print Service handles printing tasks, utilizing the Printing Service Handler, Printing Queue, Printer Connector, and Configuration Connector, all orchestrated by the Scheduler for efficient task management.
+
+The SPSO Management Service oversees printer and user management and reporting functionalities via the Management Service Handler, Printing Management Connector, User Management Connector, and Report Connector.
+
+The Logging Service records and manages system logs using the Logging Service Handler, Logger, Printer Logging Connector, and User Activity Logging Connector.
+
+#### Persistence Layer / Database
+
+![Architecture Diagram_Persistence Layer](architecture_design/Architecture_diagram-Persistence_layer.png)
+
+The Profile Mapper connects and maps user profiles to the database system.
+
+The Printer Service Mapper manages data related to printer services.
+
+The SPSO Management Service Mapper handles the mapping of SPSO management data.
+
+The Logging Service Mapper maintains data related to system logs and activities.
 
 ### Component Diagram
 
