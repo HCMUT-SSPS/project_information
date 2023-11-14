@@ -108,7 +108,7 @@
 
 ### Sequence Diagrams
 
-- [See here for the whole diagram](https://app.diagrams.net/#G1ip6WyXsUAPqwOgMxc2w9fqgi0lAFVO5v)
+For the whole diagram: [See here](https://app.diagrams.net/#G1ip6WyXsUAPqwOgMxc2w9fqgi0lAFVO5v)
 
 ### Class Diagram
 
