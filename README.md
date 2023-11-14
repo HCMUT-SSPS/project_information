@@ -64,6 +64,10 @@
 4. If the number of pages to be printed exceeds the student’s account page balance, he/she may buy some printing pages, or change the printing properties, or cancel printing.
 5. Finally the document printing is conducted.
 
+#### (Student) Viewing Printing Log
+
+![Activity Diagram_Viewing Printing Log](system_modeling/Activity diagram-(Student) Viewing printing log.drawio.png)
+
 ### Sequence Diagrams
 
 ### Class Diagram
