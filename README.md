@@ -54,9 +54,9 @@
 
 ### Activity Diagrams
 
-![Activity Diagram](system_modeling/activity_diagram.png "Activity Diagram")
+#### (Student) Printing
 
-#### Description
+![Activity Diagram_Printing](system_modeling/activity_diagram.png "Activity Diagram")
 
 1. A student uploads the document file to be printed. 
 2. If the file type is not among the ones permitted by the SPSO, he/she is required to upload another one until the file type is valid or he/she cancels uploading. 
