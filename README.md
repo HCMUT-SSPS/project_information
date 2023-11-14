@@ -56,7 +56,7 @@
 
 #### (Student) Printing
 
-![Activity Diagram_Printing](system_modeling/activity_diagram.png "Activity Diagram")
+![Activity Diagram_Printing](system_modeling/Activity_diagram-Printing.png)
 
 1. A student uploads the document file to be printed. 
 2. If the file type is not among the ones permitted by the SPSO, he/she is required to upload another one until the file type is valid or he/she cancels uploading. 
@@ -66,7 +66,7 @@
 
 #### (Student) Viewing Printing Log
 
-![Activity Diagram_Viewing Printing Log](system_modeling/Activity diagram-(Student) Viewing printing log.drawio.png)
+![Activity Diagram_Viewing Printing Log](system_modeling/Activity_diagram-Viewing_printing_log.drawio.png)
 
 ### Sequence Diagrams
 
