@@ -156,6 +156,8 @@ When the user clicks the "Report" button, the UI displays the report form. The u
 
 [See here](https://lucid.app/lucidchart/76335e57-d6df-45d4-b761-eb0bd0b5617a/edit?viewport_loc=-1824%2C-410%2C8064%2C4502%2CHWEp-vi-RSFO&invitationId=inv_e41aa7bc-3569-4097-8df3-b1163e9dddaa)
 
+![Sequence Diagram_Reports](system_modeling/class_diagram.png)
+
 ### Figma
 
 - [See here - Official UI/UX](https://www.figma.com/file/3zPwrxvGnkqkTMH4TApfZk/PrintPulse?type=design&node-id=1475%3A5511&mode=design&t=vm82A1VRbjwftSgQ-1)
